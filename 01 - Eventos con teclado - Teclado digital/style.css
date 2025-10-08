@@ -1,8 +1,8 @@
 :root {
-    --main-color: #0a1d3a;        /* Azul profundo del fondo */
-    --button-color: #173b67;      /* Azul medio */
-    --hover-color1: #48d1cc;      /* Turquesa */
-    --hover-color2: #7fffd4;      /* Verde aurora */
+    --main-color: #0a1d3a;
+    --button-color: #173b67;
+    --hover-color1: #48d1cc;
+    --hover-color2: #7fffd4;
     --text-color: #ffffff;
 }
 
@@ -38,8 +38,8 @@ body {
     background-color: var(--button-color);
     color: var(--text-color);
     border-radius: 10px;
-    width: 110px;         /* ancho fijo */
-    height: 110px;        /* alto fijo */
+    width: 110px;
+    height: 110px;
     font-size: 22px;
     cursor: pointer;
     display: flex;
