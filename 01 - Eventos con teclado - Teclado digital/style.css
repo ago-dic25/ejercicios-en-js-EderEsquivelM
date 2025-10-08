@@ -1,0 +1,95 @@
+:root {
+    --main-color: #0a1d3a;        /* Azul profundo del fondo */
+    --button-color: #173b67;      /* Azul medio */
+    --hover-color1: #48d1cc;      /* Turquesa */
+    --hover-color2: #7fffd4;      /* Verde aurora */
+    --text-color: #ffffff;
+}
+
+body {
+    text-align: center;
+    background-image: url("background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal de las teclas */
+.keys {
+    margin: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.key {
+    border: none;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    width: 110px;         /* ancho fijo */
+    height: 110px;        /* alto fijo */
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.key kbd {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.key .sound {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.key:hover {
+    background: linear-gradient(135deg, var(--hover-color1), var(--hover-color2));
+    color: var(--main-color);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(127, 255, 212, 0.6);
+}
+
+/* Botones de control */
+.save {
+    margin-top: 20px;
+}
+
+.save button {
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.save button:hover {
+    background: linear-gradient(135deg, var(--hover-color1), var(--hover-color2));
+    color: var(--main-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(72, 209, 204, 0.6);
+}
