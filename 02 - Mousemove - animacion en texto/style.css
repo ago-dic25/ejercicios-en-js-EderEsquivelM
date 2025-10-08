@@ -1,0 +1,35 @@
+
+html {
+  color: black;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+
+h1 {
+  text-shadow: 10px 10px 0 rgba(0,0,0,1);
+  font-size: 100px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff0f6;
+}
+
+.hero h1 {
+  color: #2F5AD4;
+  font-size: 100px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  transition: text-shadow 0.2s ease, color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
