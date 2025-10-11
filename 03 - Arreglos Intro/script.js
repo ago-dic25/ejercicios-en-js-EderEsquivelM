@@ -45,7 +45,6 @@ const input = document.getElementById("filtroAlumno");
 const boton = document.getElementById("btnFiltrar");
 const propiedad = document.getElementById("propiedad");
 
-// Función para mostrar los datos de los alumnos
 function mostrarLista(arr) {
     arreglo.innerHTML = "";
     if (arr.length === 0) {
