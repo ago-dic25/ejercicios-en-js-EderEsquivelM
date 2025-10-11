@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arreglos intro</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
-</body>
+    <h1>Lista de Alumnos</h1>
+
+    <label for="propiedad">Filtrar por:</label>
+    <select id="propiedad">
+        <option value="nombre">Nombre</option>
+        <option value="apellidoP">Apellido Paterno</option>
+        <option value="apellidoM">Apellido Materno</option>
+        <option value="matricula">Matrícula</option>
+    </select>
+
+    <input type="text" id="filtroAlumno" placeholder="Escribe aquí...">
+
+    <button id="btnFiltrar">Realizar consulta</button>
+
+    <div class="resultado">
+        <ul id="listaAlumnos"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body> 
 </html>
